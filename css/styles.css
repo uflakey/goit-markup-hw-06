@@ -844,6 +844,12 @@ button {
 .subscribe-form-label {
   opacity: 0.6000000238418579;
 }
+@media screen and (max-width: 427.98px) {
+  .subscribe-form-input {
+    width: 100%;
+  }
+}
+
 .subscribe-form-input {
   width: 398px;
   height: 40px;
@@ -1049,7 +1055,7 @@ button {
 
 .modal {
   max-width: 392px;
-  height: 584px;
+  min-height: 584px;
   padding-top: 72px;
   padding-right: 16px;
   padding-bottom: 24px;
@@ -1067,14 +1073,13 @@ button {
 
 @media screen and (max-width: 427.98px) {
   .modal {
-    max-width: 80%;
+    max-width: 90%;
   }
 }
 
 @media screen and (min-width: 768px) {
   .modal {
     max-width: 408px;
-    min-height: 584px;
     padding-top: 72px;
     padding-right: 24px;
     padding-bottom: 24px;
@@ -1122,7 +1127,6 @@ button {
 
 .modal-caption {
   display: block;
-  width: 360px;
   margin-bottom: 16px;
   color: var(--main-dark-col);
   text-align: center;
@@ -1131,7 +1135,6 @@ button {
   line-height: 1.5;
   letter-spacing: 0.32px;
 }
-
 .modal-form {
 }
 
