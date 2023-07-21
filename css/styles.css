@@ -185,8 +185,6 @@ button {
     align-items: center;
     gap: 12px;
     flex-direction: column;
-    padding-top: 16px;
-    padding-bottom: 16px;
   }
 }
 
@@ -198,26 +196,26 @@ button {
 }
 .header-address-item {
 }
+
 .header-address-link {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--text-col);
-  display: block;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 768px) {
   .header-address-link {
+    display: block;
+    font-weight: 400;
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.48px;
+    color: var(--text-col);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
-
 @media screen and (min-width: 1158px) {
   .header-address-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
     padding-top: 24px;
     padding-bottom: 24px;
   }
@@ -826,6 +824,7 @@ button {
 /*Footer subscribe form*/
 
 .container-footer-subscribe {
+  width: 100%;
 }
 .subscribe-form-text {
   margin-bottom: 16px;
@@ -837,6 +836,7 @@ button {
 }
 @media screen and (min-width: 768px) {
   .subscribe-form {
+    width: 100%;
     display: flex;
     gap: 24px;
   }
@@ -844,14 +844,9 @@ button {
 .subscribe-form-label {
   opacity: 0.6000000238418579;
 }
-@media screen and (max-width: 427.98px) {
-  .subscribe-form-input {
-    width: 100%;
-  }
-}
 
 .subscribe-form-input {
-  width: 398px;
+  width: 100%;
   height: 40px;
   padding-left: 16px;
   margin-bottom: 16px;
@@ -861,18 +856,14 @@ button {
   font-weight: 400;
   line-height: 2;
   letter-spacing: 0.48px;
-  opacity: 0.6000000238418579;
-
   border-radius: 4px;
   border: 1px solid var(--white, #fff);
-  opacity: 0.30000001192092896;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
 @media screen and (min-width: 768px) {
   .subscribe-form-input {
-    width: 264px;
+    min-width: 264px;
     height: 40px;
     margin-bottom: 0;
   }
@@ -891,7 +882,6 @@ button {
   align-items: center;
   min-width: 165px;
   height: 40px;
-  margin: 0 auto;
   border: none;
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
